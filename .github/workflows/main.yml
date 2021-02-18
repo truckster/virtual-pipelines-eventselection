@@ -7,3 +7,10 @@ jobs:
       - name: Say hello to the world!
         run: echo hello world
 
+  build_skim:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: |
+          COMPILER=$(root-config --cxx)
+          $COMPILER -g -O3 -Wall -Wextra -Wpedantic -o skim skim.cxx
