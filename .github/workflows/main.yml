@@ -59,7 +59,7 @@ jobs:
       - name: plot
         run: python histograms.py skim_ggH.root ggH hist_ggH.root
 
-      - uses: actions/uplload-artifact@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: histograms
           path: hist_ggH.root
