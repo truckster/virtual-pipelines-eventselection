@@ -79,8 +79,7 @@ jobs:
 
       - uses: actions/download-artifact@v2
         with:
-          name:
-            skim_ggH
+          name: skim_ggH
 
       - name: test_log
         run: python tests/test_cutflow_ggH.py
