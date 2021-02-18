@@ -75,8 +75,11 @@ jobs:
 
       - uses: actions/download-artifact@v2
         with:
-          name: |
-            histograms
+          name: histograms
+
+      - uses: actions/download-artifact@v2
+        with:
+          name:
             skim_ggH
 
       - name: test_log
