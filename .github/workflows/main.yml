@@ -42,7 +42,7 @@ jobs:
           name: skim_ggH
           path: |
             skim_ggH.root
-            skim_ggh.log
+            skim_ggH.log
 
   plot:
     needs: skim
