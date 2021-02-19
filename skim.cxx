@@ -29,7 +29,7 @@ template <typename T>
 auto MinimalSelection(T &df) {
     return df.Filter("HLT_IsoMu17_eta2p1_LooseIsoPFTau20 == true", "Passes trigger")
              .Filter("nMuon > 0", "nMuon > 0")
-             .Filter("nTau > 0", "nTau > 0");
+             .Filter("nTau > 0", "nTau > 0")
 }
 
 
